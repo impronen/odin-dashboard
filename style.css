@@ -1,0 +1,59 @@
+
+* {
+    gap: 6px;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  gap: 4px;
+}
+
+.header {
+    background-color: #69D2E7;
+    grid-column: 2 / 3;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+
+.sidebar {
+    display: grid;
+    grid-row: 1 / 6;
+    background-color: #A7DBD8;
+}
+
+.projects {
+    display: grid;
+    background-color: #E0E4CC;
+}
+
+.project-content {
+    background-color: #A7DBD8;
+}
+
+.announcements {
+    display: grid;
+    background-color: #F38630;
+
+}
+
+.side-content {
+    background-color: #E0E4CC;
+}
+
+.footer {
+
+}
+
+
+/* Pallette */
+
+#69D2E7,
+#A7DBD8,#E0E4CC,#F38630,#FA6900,#69D2E7,#A7DBD8,#E0E4CC
+<a href="https://www.colourlovers.com/palette/92095/Giant_Goldfish" target="_blank">
+<img src="https://www.colourlovers.com/images/badges/p/92/92095_Giant_Goldfish.png" style="width: 240px; height: 120px; border: 0 none;" alt="Giant_Goldfish" /></a><br /><span style="font-size: 10px; color: #5e5e5e;"><a href="//www.colourlovers.com/color" target="_blank" style="font-size: 10px; color: #5e5e5e;">Color</a> by <a href="//www.colourlovers.com/" target="_blank" style="font-size: 10px; color: #5e5e5e;">COLOURlovers</a></span>

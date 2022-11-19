@@ -1,12 +1,12 @@
 
 * {
-    gap: 6px;
+    /* gap: 6px; */
 }
 
 .main {
   display: grid;
   grid-template-columns: 1fr 4fr;
-  gap: 4px;
+
 }
 
 .header {
@@ -14,22 +14,38 @@
     grid-column: 2 / 3;
     display: grid;
     grid-template-columns: 1fr 2fr;
-}
-
-.main-content {
-    display: grid;
-    grid-template-columns: 4fr 1fr;
+    gap: 6px;
 }
 
 .sidebar {
     display: grid;
     grid-row: 1 / 6;
     background-color: #A7DBD8;
+    gap: 6px;
+    
+}
+
+.site-navigation {
+    gap: 6px;
+
+}
+
+.side-content {
+    margin: 2px;
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    
 }
 
 .projects {
     display: grid;
     background-color: #E0E4CC;
+    gap: 6px;
+    grid-template-columns: 1fr 1fr;
+    grid-row: 2 / 5;
 }
 
 .project-content {
@@ -38,7 +54,9 @@
 
 .announcements {
     display: grid;
+    grid-row: 1 / 6;
     background-color: #F38630;
+    gap: 6px;
 
 }
 

@@ -21,6 +21,10 @@
     padding-left: 4px;
 }
 
+.profile-pic {
+    border-radius: 50%;
+}
+
 .sidebar {
     display: grid;
     grid-row: 1 / 6;
@@ -35,6 +39,8 @@
 }
 
 .side-content {
+    grid-template-rows: repeat(3, 100px);
+    grid-template-columns: repeat(5, 100px);
     margin: 2px;
 }
 
@@ -70,11 +76,7 @@
 
 }
 
-.side-content {
-    background-color: #E0E4CC;
-    grid-template-rows: repeat(3, 100px);
-    grid-template-columns: repeat(5, 100px);
-}
+
 
 .footer {
 

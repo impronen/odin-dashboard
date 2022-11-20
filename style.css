@@ -17,6 +17,10 @@
     gap: 6px;
 }
 
+.logo {
+    padding-left: 4px;
+}
+
 .sidebar {
     display: grid;
     grid-row: 1 / 6;
@@ -37,6 +41,7 @@
 .main-content {
     display: grid;
     grid-template-columns: 4fr 1fr;
+    grid-template-rows: auto;
     
 }
 
@@ -44,12 +49,17 @@
     display: grid;
     background-color: #E0E4CC;
     gap: 6px;
-    grid-template-columns: 1fr 1fr;
-    grid-row: 2 / 5;
+    grid-template-columns: 1fr 6fr;
+    grid-template-rows: repeat(3, min(1fr, 50%));
+    grid-template-columns: repeat(4, 1fr);
+    grid-row: 2 / 6;
+    padding: 4px;
 }
 
 .project-content {
     background-color: #A7DBD8;
+    text-align: center;
+    padding: 12px;
 }
 
 .announcements {
@@ -62,6 +72,8 @@
 
 .side-content {
     background-color: #E0E4CC;
+    grid-template-rows: repeat(3, 100px);
+    grid-template-columns: repeat(5, 100px);
 }
 
 .footer {

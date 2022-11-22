@@ -13,8 +13,14 @@
     background-color: #69D2E7;
     grid-column: 2 / 3;
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 2fr 2fr;
     gap: 6px;
+}
+
+.header-item {
+display: flex;
+align-items: center;
+justify-content: center;
 }
 
 .logo {
@@ -29,22 +35,37 @@
     display: grid;
     grid-row: 1 / 6;
     background-color: #A7DBD8;
-    gap: 6px;
+    gap: 50px;
     
 }
 
 .site-navigation {
     gap: 6px;
-
+    display: grid;
 }
 
 .side-content {
-    grid-template-rows: repeat(3, 100px);
-    grid-template-columns: repeat(5, 100px);
-    margin: 2px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 3fr;
+    padding-left: 5px;
 }
 
+.settings {
+    gap: 6px;
+    display: grid;
+}
+
+.settings-content {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 3fr;
+    padding-left: 5px;
+}
+
+
 .main-content {
+    background-color: #E0E4CC;
     display: grid;
     grid-template-columns: 4fr 1fr;
     grid-template-rows: auto;
@@ -53,7 +74,6 @@
 
 .projects {
     display: grid;
-    background-color: #E0E4CC;
     gap: 6px;
     grid-template-columns: 1fr 6fr;
     grid-template-rows: repeat(3, min(1fr, 50%));

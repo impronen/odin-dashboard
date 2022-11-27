@@ -5,9 +5,9 @@
 }
 
 .body {
-    margin: 0px;
+/*     margin: 0px;
     padding: 0px;
-    border: 0cm;
+    border: 0cm; */
 }
 
 .main {
@@ -30,9 +30,9 @@
 }
 
 .header-item {
-display: flex;
-align-items: center;
-justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .logo {
@@ -46,18 +46,24 @@ justify-content: center;
 .sidebar {
     display: grid;
     grid-row: 1 / 6;
+    grid-template-rows: 20% 20% 20% 20% 20%;
     background-color: #A7DBD8;
-    gap: 50px;
-    width: 200px;
+    width: 17vw;
+/*     gap: 15%; */
+    max-width: 250px;
+    min-width: 170px;
     height: 100vh;
 }
 
 .sidebar-heading {
-    text-align: center;
+    grid-area: 1 / 1;
+    margin-top: 20px;
+    padding-left: 8px;
+    height: 10vh;
 }
 
 .site-navigation {
-    gap: 6px;
+    grid-row: 2 / 2;
     display: grid;
 }
 
@@ -69,13 +75,14 @@ justify-content: center;
 }
 
 .settings {
-    gap: 6px;
     display: grid;
+    padding-top: 40%;
 }
 
 .settings-content {
     display: grid;
     align-items: center;
+    height: fit-content;
     grid-template-columns: 1fr 3fr;
     padding-left: 8px;
 }
@@ -84,9 +91,14 @@ justify-content: center;
 .main-content {
     background-color: #E0E4CC;
     display: grid;
-    grid-template-columns: 4fr 1fr;
+    grid-template-columns: 5fr 2fr;
     grid-template-rows: auto;
     width: 100%;
+}
+
+.projects-heading {
+    padding-left: 4rem;
+    padding-top: 2rem;
 }
 
 .projects {
@@ -94,8 +106,7 @@ justify-content: center;
     gap: 15px;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     grid-row: 2 / 6;
-    padding: 4px;
-    height: 80vh;
+    height: 70vh;
     padding: 4rem;
 }
 
@@ -112,13 +123,35 @@ justify-content: center;
 .announcements {
     display: grid;
     grid-row: 1 / 6;
+    grid-template-rows: 30% 30% 20% 30%;
     background-color: #F38630;
     gap: 6px;
-    width: 20vw;
+    width: 23vw;
+    min-width: 170px;
     height: 90vh;
 }
 
+.announcements-feed {
+    display: grid;
+    align-items: center;
+    padding-left: 8px;
+}
 
+.announcements-content {
+    display: grid;
+    text-align: center;
+    background-color: #A7DBD8;
+    gap: 10px;
+    width: 20vw;
+    min-width: 150px;
+    height: 150px;
+}
+
+.trending-feed {
+    display: grid;
+    align-items: center;
+    padding-left: 8px;
+}
 
 .footer {
 

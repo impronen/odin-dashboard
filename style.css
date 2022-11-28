@@ -124,16 +124,25 @@
 }
 
 .project-text {
-
+    text-align: left;
+    padding: 10px;
 }
 
-.project-text::first-line {
+.project-text:first-line {
     font-size: 18px;
     font-weight: bold;
     line-height: 30px;
 }
 
+.project-button-container {
+    display: grid;
+    grid-auto-flow: column;
+    place-content: end;
+    padding: 10px;
+}
+
 .project-icons {
+    gap: 10px;
     border: none;
     background-color: transparent;
 }

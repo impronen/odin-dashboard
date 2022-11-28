@@ -1,11 +1,17 @@
+
+
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
+/* General styles */
 
 * {
     margin: 0;
     padding: 0;
     font-family: "Roboto", sans-serif;
+    
 }
+
+*:focus {outline:none !important}
 
 .body {
     
@@ -13,7 +19,10 @@
 
 i {
     place-items: center;
+    padding-left: 20px;
 }
+
+/* MAIN Grid - contains all content */
 
 .main {
   display: grid;
@@ -25,14 +34,18 @@ i {
   border: 0cm;
 }
 
+/* HEADER */
+
 .header {
     background-color: #69D2E7;
     grid-column: 2 / 3;
     display: grid;
     grid-template-columns: 1fr 2fr 2fr;
+    grid-template-rows: 3fr 3fr;
     gap: 6px;
-    
 }
+
+
 
 .header-item {
     display: flex;
@@ -40,36 +53,84 @@ i {
     justify-content: center;
 }
 
-.logo {
-    padding-left: 4px;
+.header-menu {
+    justify-content: flex-end;
+    padding: 20px;
+    margin-left: 10px;
+}
+
+.search {
+    flex-grow: 1;
+    padding: 10px;
+    border-radius: 20px;
+    border-style: none;
+    background-color: #E0E4CC;
+    color: #363636;
+    /* box-shadow: inset 7px 0 9px -7px rgba(0,0,0,0.4); */
+    box-shadow: inset 1px 5px 5px -5px rgba(0,0,0,0.4);
+}
+
+input[type=text]:focus  {
+    border: 2px solid #F38630;
 }
 
 .profile-pic {
     border-radius: 50%;
 }
 
+.header-greeting {
+    grid-area: 2 / 2;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: smaller;
+    padding-left: 20px;
+}
+
+.user-greeting {
+    padding-left: 20px;
+}
+
+.header-buttons {
+    grid-area: 2 / 4 / 2 / 3;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.quick-actions {
+    padding: 10px;
+    border-radius: 10px;
+    border-style: none;
+    background-color: #E0E4CC;
+}
+
+/* LEFT side navigation bar */
+
 .sidebar {
     grid-row: 1 / 7;
     background-color: #A7DBD8;
     width: 20vw;
     gap: 15%;
-    min-width: 170px;
+    min-width: fit-content;
     height: 100vh;
     list-style: none;
     place-items: center;
 }
 
+/* Heading */
+
 .sidebar-heading {
     grid-area: 1 / 1;
-    margin-top: 20px;
-    padding-left: 8px;
     padding-top: 5vh;
     padding-bottom: 5vh;
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr 2fr 1fr;
     align-items: center;
     height: fit-content;
 }
+
+/* Navigation pane */
 
 .site-navigation {
     padding-top: 8vh;
@@ -82,6 +143,8 @@ i {
     padding: 8px;
     font-size: 18px;
 }
+
+/* User settings pane    */
 
 .settings {
     padding-top: 10vh;
@@ -96,14 +159,18 @@ i {
 }
 
 
+/* STUFF in the middle and right hand side w/ beige background  */
+
 .main-content {
     background-color: #E0E4CC;
     display: grid;
     grid-template-columns: 5fr 2fr;
     /* grid-template-rows: 1fr; */
     width: 100%;
-    box-shadow: inset -4px 5px 5px #888888;
+    box-shadow: inset 0 7px 9px -7px rgba(0,0,0,0.4);
 }
+
+/* Projects -section */
 
 .projects-heading {
     padding-left: 4rem;
@@ -119,6 +186,8 @@ i {
     padding: 4rem;
 }
 
+/* Project cards */
+
 .project-content {
     display: grid;
     align-items: center;
@@ -129,6 +198,8 @@ i {
     padding: 12px;
     box-shadow: 3px 3px 2px #888888;
 }
+
+/* Interior of cards */
 
 .project-text {
     text-align: left;
@@ -155,23 +226,33 @@ i {
     background-color: transparent;
 }
 
+/* Right hand panel */
+
 .announcements {
-    display: grid;
     grid-row: 1 / 7;
-    grid-template-rows: 30% 30% 20% 30%;
     background-color: #E0E4CC;
     padding: 5px;
     gap: 6px;
     width: 23vw;
     min-width: 170px;
-    height: 100%;
-    box-shadow: inset -5px 5px 5px #888888;
+    box-shadow: inset 0 7px 9px -7px rgba(0,0,0,0.4);
 }
+
+
+
+
+/* The first feed on right side panel */
 
 .announcements-feed {
     display: grid;
     align-items: center;
     padding-left: 8px;
+}
+
+.announcements-heading {
+    display: grid;
+    align-self: left;
+    padding: 2rem;
 }
 
 .announcements-content {
@@ -181,8 +262,9 @@ i {
     gap: 10px;
     width: 20vw;
     min-width: 150px;
-    height: 150px;
 }
+
+/* Lower feed on right side panel */
 
 .trending-feed {
     display: grid;

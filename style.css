@@ -47,7 +47,6 @@
 .sidebar {
     grid-row: 1 / 7;
     background-color: #A7DBD8;
-    font-weight: bold;
     width: 20vw;
     gap: 15%;
     min-width: 170px;
@@ -96,7 +95,7 @@
     background-color: #E0E4CC;
     display: grid;
     grid-template-columns: 5fr 2fr;
-    /* grid-template-rows: auto; */
+    /* grid-template-rows: 1fr; */
     width: 100%;
 }
 
@@ -108,7 +107,7 @@
 .projects {
     display: grid;
     gap: 15px;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: 1fr 1fr;
     grid-row: 2 / 6;
     height: 70vh;
     padding: 4rem;
@@ -118,10 +117,25 @@
     display: grid;
     align-items: center;
     background-color: #A7DBD8;
+    border-left: 10px solid #F38630;
     text-align: center;
+    border-radius: 10px;
     padding: 12px;
-    height: 150px;
-    width: 150px;
+}
+
+.project-text {
+
+}
+
+.project-text::first-line {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+.project-icons {
+    border: none;
+    background-color: transparent;
 }
 
 .announcements {
